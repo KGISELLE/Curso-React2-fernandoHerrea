@@ -14,13 +14,13 @@ import { heroes, owners } from "../data/heroes-default";
 console.log(owners);
 
 //Find
-const getHeroesById = (id) => {
+export const getHeroesById = (id) => {
   return heroes.find((heroe)=> heroe.id === id );
 } 
 
 console.log( getHeroesById(2) );
 
 //Filter
-const getHeroesByOwner = (owner) => heroes.filter((heroe)=> heroe.owner === owner );
+export const getHeroesByOwner = (owner) => heroes.filter((heroe)=> heroe.owner === owner );
 
 console.log(getHeroesByOwner('DC'));
